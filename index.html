@@ -1,64 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/main.css" />
-    <title>Главная</title>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="logo">
-          My <img src="./img/like.svg" alt="heart" /> Shows
-        </div>
-        <menu>
-          <li><a href="./index.html">Главная</a></li>
-          <li><a href="./pages/now-playing.html">Сейчас в прокате</a></li>
-          <li><a href="">Популярные</a></li>
-          <li><a href="">Топы Рейтинга</a></li>
-          <li><a href="">Ближайшие премьеры</a></li>
-        </menu>
-      </div>
-    </header>
-    <main>
-      <div class="container">
-        <section class="movies-block">
-          <h2>Сейчас в прокате</h2>
-          <ul id="now-playing"></ul>
-          <div class="list-url">
-            <a href="./pages/now-playing.html">смотреть все</a>
-          </div>
-        </section>
-        <section class="movies-block">
-          <h2>Популярные</h2>
-          <ul id="popular"></ul>
-          <div class="list-url">
-            <a href="">смотреть все</a>
-          </div>
-        </section>
-        <section class="movies-block">
-          <h2>Топы Рейтинга</h2>
-          <ul id="top-rated"></ul>
-          <div class="list-url">
-            <a href="">смотреть все</a>
-          </div>
-        </section>
-        <section class="movies-block">
-          <h2>Ближайшие премьеры</h2>
-          <ul id="upcoming"></ul>
-          <div class="list-url">
-            <a href="">смотреть все</a>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer>
-      <div class="container">
-        (C) Сайт Серёжи и Юли
-      </div>
-    </footer>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/main.css" />
+        <title>Главная</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    My <img src="./img/like.svg" alt="heart" /> Shows
+                </div>
+                <menu>
+                    <li><a href="./index.html">Главная</a></li>
+                    <li
+                        ><a href="./pages/now-playing.html"
+                            >Сейчас в прокате</a
+                        ></li
+                    >
+                    <li><a href="./pages/popular.html">Популярные</a></li>
+                    <li><a href="./pages/top-rated.html">Топы Рейтинга</a></li>
+                    <li
+                        ><a href="./pages/upcoming.html"
+                            >Ближайшие премьеры</a
+                        ></li
+                    >
+                </menu>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <section class="movies-block">
+                    <h2>Сейчас в прокате</h2>
+                    <ul id="now-playing"></ul>
+                    <div class="list-url">
+                        <a href="./pages/now-playing.html">смотреть все</a>
+                    </div>
+                </section>
+                <section class="movies-block">
+                    <h2>Популярные</h2>
+                    <ul id="popular"></ul>
+                    <div class="list-url">
+                        <a href="./pages/popular.html">смотреть все</a>
+                    </div>
+                </section>
+                <section class="movies-block">
+                    <h2>Топы Рейтинга</h2>
+                    <ul id="top-rated"></ul>
+                    <div class="list-url">
+                        <a href="./pages/top-rated.html">смотреть все</a>
+                    </div>
+                </section>
+                <section class="movies-block">
+                    <h2>Ближайшие премьеры</h2>
+                    <ul id="upcoming"></ul>
+                    <div class="list-url">
+                        <a href="./pages/upcoming.html">смотреть все</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                (C) Сайт Максименко Юлии
+            </div>
+        </footer>
 
-    <script src="./scripts/index.js"></script>
-  </body>
+        <script src="./scripts/index.js"></script>
+    </body>
 </html>

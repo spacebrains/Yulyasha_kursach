@@ -1,16 +1,11 @@
-const NOW_PLAYING_URL =
-    "https://api.themoviedb.org/3/movie/now_playing?api_key=57f28580932896b3e3c54cd033265039&language=ru-Ru";
 const POPULAR_URL =
-    "https://api.themoviedb.org/3/movie/popular?api_key=57f28580932896b3e3c54cd033265039&language=ru-Ru";
-const TOP_RATED_URL =
-    "https://api.themoviedb.org/3/movie/top_rated?api_key=57f28580932896b3e3c54cd033265039&language=ru-Ru";
-const UPCOMING_URL =
-    "https://api.themoviedb.org/3/movie/upcoming?api_key=57f28580932896b3e3c54cd033265039&language=ru-Ru";
-
+    "https://api.themoviedb.org/3/movie/popular?api_key=57f28580932896b3e3c54cd033265039&language=ru-Ru&page=";
 const IMG_URl = "https://image.tmdb.org/t/p/w500/";
 
+let page = 1;
+
 const getMovies = async url => {
-    const response = await fetch(url);
+    const response = await fetch(url + page);
     const data = await response.json();
     const movies = data.results;
     console.log(movies);
@@ -58,7 +53,6 @@ const createMovieBlock = movieData => {
 
 getAndInsertMovies = async (url, id) => {
     const arrayMovies = await getMovies(url);
-    arrayMovies.length = 8;
     const arrayElements = arrayMovies.map(movieData =>
         createMovieBlock(movieData)
     );
@@ -69,11 +63,9 @@ getAndInsertMovies = async (url, id) => {
     });
 };
 
-const initialization = async () => {
-    await getAndInsertMovies(NOW_PLAYING_URL, "now-playing");
-    await getAndInsertMovies(POPULAR_URL, "popular");
-    await getAndInsertMovies(TOP_RATED_URL, "top-rated");
-    await getAndInsertMovies(UPCOMING_URL, "upcoming");
-};
+getAndInsertMovies(POPULAR_URL, "popular");
 
-initialization();
+const onLoadMore = () => {
+    page = page + 1;
+    getAndInsertMovies(POPULAR_URL, "popular");
+};
