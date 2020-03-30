@@ -95,6 +95,7 @@ header menu li a:hover {
 .movies-block .list-url a:hover {
   color: gray;
 }
+
 /* MOVIE */
 .movie {
   width: 260px;
@@ -106,6 +107,12 @@ header menu li a:hover {
   width: 260px;
   height: 150px;
   background-color: #c00;
+
+}
+
+.movie .backdrop:hover {
+  opacity: 0.6;
+  transition: 0.5s;
 }
 
 .movie .title {
