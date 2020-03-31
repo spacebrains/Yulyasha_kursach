@@ -23,12 +23,11 @@ viewBox="0 0 8466.66 8466.66"
   <style type="text/css">
    <![CDATA[
     @font-face { font-family:"Dutch801 XBd BT";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID0") format(svg)}
-    .str1 {stroke:#FEFEFE;stroke-width:33.86;stroke-miterlimit:22.9256}
-    .str0 {stroke:#FEFEFE;stroke-width:33.87;stroke-miterlimit:22.9256}
-    .str2 {stroke:#FEFEFE;stroke-width:50.8;stroke-miterlimit:22.9256}
-    .fil1 {fill:#FEFEFE}
+    .str0 {stroke:#FEFEFE;stroke-width:33.86;stroke-miterlimit:22.9256}
+    .str1 {stroke:#FEFEFE;stroke-width:50.8;stroke-miterlimit:22.9256}
     .fil2 {fill:#FEFEFE}
     .fil0 {fill:#C52223}
+    .fil1 {fill:#252525}
     .fnt2 {font-weight:normal;font-size:705.56px;font-family:'Dutch801 XBd BT'}
     .fnt1 {font-weight:normal;font-size:776.11px;font-family:'Dutch801 XBd BT'}
     .fnt0 {font-weight:normal;font-size:846.67px;font-family:'Dutch801 XBd BT'}
@@ -38,17 +37,17 @@ viewBox="0 0 8466.66 8466.66"
  <g id="Layer_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
   <circle class="fil0" cx="4288.65" cy="3235.21" r="1574.27"/>
-  <circle class="fil1 str0" cx="4116.67" cy="3274.9" r="1574.27"/>
+  <circle class="fil1" cx="4116.67" cy="3274.9" r="1574.27"/>
   <circle class="fil0" cx="4028.19" cy="3299.68" r="1574.27"/>
-  <circle class="fil1 str1" cx="4669.95" cy="2608.44" r="521.98"/>
-  <circle class="fil2 str1" cx="3366.88" cy="3997.51" r="521.98"/>
-  <circle class="fil2 str1" cx="4762.56" cy="3911.52" r="521.98"/>
-  <circle class="fil2 str1" cx="3307.35" cy="2667.98" r="521.98"/>
-  <circle class="fil2 str1" cx="4028.19" cy="3299.68" r="141.97"/>
-  <rect class="fil0 str1" x="1702.9" y="4252.18" width="5318.13" height="2182.81"/>
-  <circle class="fil2 str1" cx="1702.91" cy="5343.6" r="621.77"/>
-  <circle class="fil2 str1" cx="7021.04" cy="5343.6" r="621.77"/>
-  <rect class="fil0 str2" x="2549.58" y="4622.6" width="3664.48" height="1508.13"/>
+  <circle class="fil1" cx="4669.95" cy="2608.44" r="521.98"/>
+  <circle class="fil1" cx="3366.88" cy="3997.51" r="521.98"/>
+  <circle class="fil1" cx="4762.56" cy="3911.52" r="521.98"/>
+  <circle class="fil1" cx="3307.35" cy="2667.98" r="521.98"/>
+  <circle class="fil1" cx="4028.19" cy="3299.68" r="141.97"/>
+  <rect class="fil0 str0" x="1702.9" y="4252.18" width="5318.13" height="2182.81"/>
+  <circle class="fil1" cx="1702.91" cy="5343.6" r="621.77"/>
+  <circle class="fil1" cx="7021.04" cy="5343.6" r="621.77"/>
+  <rect class="fil0 str1" x="2549.58" y="4622.6" width="3664.48" height="1508.13"/>
   <text x="2857.98" y="5659.66"  class="fil2 fnt0">T</text>
   <text x="5285.76" y="5659.66"  class="fil2 fnt0">T</text>
   <text x="3416.92" y="5659.66"  class="fil2 fnt1">I</text>
