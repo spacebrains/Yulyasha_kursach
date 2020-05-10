@@ -1,5 +1,5 @@
 const UPCOMING_URL =
-    "https://api.themoviedb.org/3/movie/upcoming?api_key=57f28580932896b3e3c54cd033265039&language=ru-Ru";
+    "https://api.themoviedb.org/3/movie/upcoming?api_key=57f28580932896b3e3c54cd033265039&language=ru-Ru&page=";
 
 const IMG_URl = "https://image.tmdb.org/t/p/w500/";
 
