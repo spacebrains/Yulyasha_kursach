@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/main.css" />
-    <title>Топы Рейтинга</title>
+    <title>Популярное</title>
 </head>
 
 <body>
@@ -16,18 +16,19 @@
             </div>
             <menu>
                 <li><a href="../index.php">Главная</a></li>
-                <li><a href="./now-playing.php">Сейчас в прокате</a></li>
-                <li><a href="./popular.php">Популярные</a></li>
-                <li><a href="./top-rated.php">Топы Рейтинга</a></li>
-                <li><a href="./upcoming.php">Ближайшие премьеры</a></li>
+                <li><a href="./now-playing.html">Сейчас в прокате</a></li>
+                <li><a href="./popular.html">Популярные</a></li>
+                <li><a href="./top-rated.html">Топ Рейтинга</a></li>
+                <li><a href="./upcoming.html">Ближайшие премьеры</a></li>
+                <li><a href="./favorite.php">Просмотренное</a></li>
             </menu>
         </div>
     </header>
     <main>
         <div class="container">
             <section class="movies-block">
-                <h2>Топы Рейтинга</h2>
-                <ul id="top-rated"></ul>
+                <h2>Популярное</h2>
+                <ul id="popular"></ul>
                 <div class="list-url">
                     <a onclick="onLoadMore()">смотреть ещё</a>
                 </div>
@@ -40,7 +41,7 @@
         </div>
     </footer>
 
-    <script src="../scripts/top-rated.js"></script>
+    <script src="../scripts/popular.js"></script>
 </body>
 
 </html>

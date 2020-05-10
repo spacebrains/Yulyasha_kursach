@@ -18,6 +18,10 @@ html {
 
 body {
     background-color: #f0f0f0;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 /* HEADER */
 header {
@@ -35,7 +39,10 @@ header .container {
     justify-content: space-between;
 }
 
-header .logo {
+header .logo a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #fff;
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -71,7 +78,6 @@ header menu li a:hover {
 
 .movies-block ul {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -103,17 +109,33 @@ header menu li a:hover {
     width: 260px;
     list-style: none;
     margin-bottom: 10px;
+    margin: 10px 20px;
 }
 
 .movie .backdrop {
     width: 260px;
-    height: 150px;
+    max-height: 150px;
+    height: 100%;
     background-color: #c00;
+    overflow: hidden;
 }
 
 .movie .backdrop:hover {
     opacity: 0.6;
     transition: 0.5s;
+}
+
+.movie .scale {
+    height: 6px;
+    background: #252525;
+    border-top: 1px solid #252525;
+    margin-top: -3px;
+    position: relative;
+}
+
+.movie .rate {
+    background: #c00;
+    height: 100%;
 }
 
 .movie .title {
@@ -128,6 +150,15 @@ header menu li a:hover {
     font-size: 1.5rem;
 }
 
+.movie .add_button {
+    display: block;
+    background: none;
+    border: none;
+    color: #0066d0;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
 /* FOOTER */
 footer {
     height: 53px;
@@ -135,6 +166,7 @@ footer {
     font-size: 1.6rem;
     color: #fff;
     background: #252525;
+    margin-top: auto;
 }
 
 footer .container {

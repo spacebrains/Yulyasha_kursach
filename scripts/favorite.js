@@ -1,16 +1,4 @@
-const NOW_PLAYING_URL =
-    "https://api.themoviedb.org/3/movie/now_playing?api_key=57f28580932896b3e3c54cd033265039&language=ru-Ru&page=";
 const IMG_URl = "https://image.tmdb.org/t/p/w500/";
-
-let page = 1;
-
-const getMovies = async (url) => {
-    const response = await fetch(url + page);
-    const data = await response.json();
-    const movies = data.results;
-    console.log(movies);
-    return movies;
-};
 
 const createMovieBlock = (movieData) => {
     const movie = document.createElement("li");
@@ -51,26 +39,20 @@ const createMovieBlock = (movieData) => {
     // addButton
     const addButton = document.createElement("button");
     addButton.className = "add_button";
-    addButton.innerText = "добавить в избранное";
+    addButton.innerText = "удалить из просмотренных";
     addButton.onclick = async () => {
         const movieRequest = {
             ID: movieData.id,
-            Title: movieData.title,
-            Backdrop: movieData.backdrop_path,
-            Vote_average: movieData.vote_average,
-            Popularity: movieData.popularity,
         };
         console.log(JSON.stringify(movieRequest));
 
-        const response = await fetch("../handlers/addMovieToDB.php", {
+        const response = await fetch("../handlers/deleteMovieFromDB.php", {
             method: "POST",
             body: JSON.stringify(movieRequest),
         });
 
         if (response.status === 200) {
-            alert("Фильм добавлен в избранное");
-        } else {
-            alert("Фильм уже существует в избранном");
+            location.href = location.href;
         }
     };
     movie.append(addButton);
@@ -78,9 +60,8 @@ const createMovieBlock = (movieData) => {
     return movie;
 };
 
-getAndInsertMovies = async (url, id) => {
-    const arrayMovies = await getMovies(url);
-    const arrayElements = arrayMovies.map((movieData) =>
+getAndInsertMovies = async (movies, id) => {
+    const arrayElements = movies.map((movieData) =>
         createMovieBlock(movieData)
     );
 
@@ -90,9 +71,9 @@ getAndInsertMovies = async (url, id) => {
     });
 };
 
-getAndInsertMovies(NOW_PLAYING_URL, "now-playing");
-
-const onLoadMore = () => {
-    page = page + 1;
-    getAndInsertMovies(NOW_PLAYING_URL, "now-playing");
+clearMovies = (id) => {
+    const ul = document.getElementById(id);
+    ul.innerHTML = "";
 };
+
+getAndInsertMovies(window.favorite, "favorite");

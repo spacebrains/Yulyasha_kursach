@@ -12,14 +12,17 @@
     <header>
         <div class="container">
             <div class="logo">
-                Film<img src="./img/like.svg" alt="heart" />Mania
+                <a href="./index.php">
+                    Film<img src="./img/like.svg" alt="heart" />Mania
+                </a>
             </div>
             <menu>
                 <li><a href="./index.php">Главная</a></li>
-                <li><a href="./pages/now-playing.php">Сейчас в прокате</a></li>
-                <li><a href="./pages/popular.php">Популярные</a></li>
-                <li><a href="./pages/top-rated.php">Топы Рейтинга</a></li>
-                <li><a href="./pages/upcoming.php">Ближайшие премьеры</a></li>
+                <li><a href="./pages/now-playing.html">Сейчас в прокате</a></li>
+                <li><a href="./pages/popular.html">Популярные</a></li>
+                <li><a href="./pages/top-rated.html">Топ Рейтинга</a></li>
+                <li><a href="./pages/upcoming.html">Ближайшие премьеры</a></li>
+                <li><a href="./pages/favorite.php">Просмотренное</a></li>
             </menu>
         </div>
     </header>
@@ -29,28 +32,28 @@
                 <h2>Сейчас в прокате</h2>
                 <ul id="now-playing"></ul>
                 <div class="list-url">
-                    <a href="./pages/now-playing.php">смотреть все</a>
+                    <a href="./pages/now-playing.html">смотреть все</a>
                 </div>
             </section>
             <section class="movies-block">
                 <h2>Популярные</h2>
                 <ul id="popular"></ul>
                 <div class="list-url">
-                    <a href="./pages/popular.php">смотреть все</a>
+                    <a href="./pages/popular.html">смотреть все</a>
                 </div>
             </section>
             <section class="movies-block">
                 <h2>Топы Рейтинга</h2>
                 <ul id="top-rated"></ul>
                 <div class="list-url">
-                    <a href="./pages/top-rated.php">смотреть все</a>
+                    <a href="./pages/top-rated.html">смотреть все</a>
                 </div>
             </section>
             <section class="movies-block">
                 <h2>Ближайшие премьеры</h2>
                 <ul id="upcoming"></ul>
                 <div class="list-url">
-                    <a href="./pages/upcoming.php">смотреть все</a>
+                    <a href="./pages/upcoming.html">смотреть все</a>
                 </div>
             </section>
         </div>
@@ -60,7 +63,6 @@
             (C) Сайт Максименко Юлии
         </div>
     </footer>
-
     <script src="./scripts/index.js"></script>
 </body>
 
