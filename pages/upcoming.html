@@ -12,7 +12,9 @@
     <header>
         <div class="container">
             <div class="logo">
-                Film<img src="../img/like.svg" alt="heart" />Mania
+                <a href="./index.php">
+                    Film<img src="./img/like.svg" alt="heart" />Mania
+                </a>
             </div>
             <menu>
                 <li><a href="../index.php">Главная</a></li>
