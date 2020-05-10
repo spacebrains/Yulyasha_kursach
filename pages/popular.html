@@ -13,7 +13,7 @@
         <div class="container">
             <div class="logo">
                 <a href="./index.php">
-                    Film<img src="./img/like.svg" alt="heart" />Mania
+                    Film<img src="../img/like.svg" alt="heart" />Mania
                 </a>
             </div>
             <menu>
